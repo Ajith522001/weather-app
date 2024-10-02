@@ -1,0 +1,100 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #2C3E50, #3498DB);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+/* Input Field */
+.input-container {
+  margin-bottom: 20px;
+}
+
+.cityname {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cityname:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.search-button {
+  margin-top: 10px;
+  padding-bottom: 30px;
+}
+
+.search-button button {
+  padding: 10px 20px;
+  background-color: #2980B9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-button button:hover {
+  background-color: #3498DB;
+}
+
+/* Weather Details */
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.city {
+  font-size: 28px;
+  margin-top: 5px;
+}
+
+.country {
+  font-size: 18px;
+  margin-top: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cord {
+  margin-top: 20px;
+}
+
+.lat, .log, .humidity, .wind {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.lat span, .log span, .humidity div, .wind div {
+  font-size: 16px;
+}
+
+.humidity-percent, .wind-percent {
+  font-size: 20px;
+  font-weight: bold;
+}
